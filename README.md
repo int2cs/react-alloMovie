@@ -7,16 +7,14 @@ Plugin VSCode :
 
 fichier settings.json :
 ajouter les lignes suivante:
-
+``` javascript
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
     "emmet.triggerExpansionOnTab": true,
-
-
-
-
+```
 
 first install : 
-
-npm install sass react-router-dom axios
+```bash
+  npm install sass react-router-dom axios
+```

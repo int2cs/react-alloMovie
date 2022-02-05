@@ -5,14 +5,14 @@ const BtnFavorites = ({ id }) => {
   const [, setStorage] = useState(localStorage.favoris ? localStorage.favoris.split(",") : []);
 
   const addToFavorites = (e) => {
-    e.stopPropagation();
+    // e.stopPropagation();
     if (!localStore.includes(id.toString())) localStore.push(id);
 
     setStorage(localStore);
     localStorage.favoris = localStore;
   };
   const removeToFavorites = (e) => {
-    e.stopPropagation();
+    // e.stopPropagation();
     const index = localStore.indexOf(id.toString());
 
     if (index !== -1) localStore.splice(index, 1);
