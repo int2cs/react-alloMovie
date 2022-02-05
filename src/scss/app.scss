@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./fonts";
+@import "./global";
+
+@import "./pages/home";
+@import "./pages/favoris";
+
+@import "./components/header";
+@import "./components/searchArea";
+@import "./components/cardFilm";
+@import "./components/selectedFilm";
+@import "./components/btnFavorites";

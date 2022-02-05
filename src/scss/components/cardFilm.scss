@@ -1,0 +1,57 @@
+.cardFilm {
+  display: grid;
+  grid-template-areas:
+    "img cg cg"
+    "img cg cg"
+    "img cg cg";
+  width: 500px;
+  column-gap: 10px;
+  background-color: rgb(241, 241, 241);
+  position: relative;
+
+  .card-content {
+    grid-area: cg;
+    padding: 0 10px 10px 0;
+  }
+  img {
+    grid-area: img;
+    // height: 280px;
+    width: 190px;
+    object-fit: cover;
+    object-position: 30%;
+  }
+  h3 {
+    margin: 0.5em 0;
+  }
+  hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+  }
+  .card-content-desc {
+    margin: 0.5em 0;
+
+    .info {
+      display: flex;
+      gap: 1em;
+    }
+
+    .date,
+    .vote {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 0.2em;
+      }
+    }
+    .vote > svg {
+      color: $yellow;
+      filter: drop-shadow(0 0 1px black);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

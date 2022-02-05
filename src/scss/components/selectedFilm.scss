@@ -1,0 +1,40 @@
+.selectedFilm {
+  padding-right: 1em;
+
+  img {
+    width: 50%;
+    float: left;
+    margin: 1em 1em 1em 0;
+  }
+  span {
+    display: block;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 1em 0;
+
+    .ico.star {
+      color: $yellow;
+      filter: drop-shadow(0 0 1px black);
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+
+    > li {
+      padding: 0.2em;
+      border-radius: 3px;
+      color: white;
+      background-color: lighten($secondary, 30%);
+      box-shadow: 1px 1px 5px grey;
+    }
+  }
+  p {
+    clear: both;
+    text-align: justify;
+    font-size: 1.3em;
+  }
+}

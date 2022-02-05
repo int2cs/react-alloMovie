@@ -1,0 +1,14 @@
+#home {
+  main {
+    margin-top: 180px;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      "search search search"
+      "liFilm liFilm desc"
+      "liFilm liFilm desc";
+  }
+  .searchArea {
+    grid-area: search;
+  }
+}
